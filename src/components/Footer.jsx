@@ -41,7 +41,14 @@ const Footer = () => {
       }`}>
       {/* Left Text */}
       <p className="text-white text-sm font-medium">
-        Made with ❤️ by [Your Name]
+        Made with ❤️ by{" "}
+        <a
+          href="https://www.linkedin.com/in/trupti-yadav/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline">
+          Trupti
+        </a>
       </p>
 
       {/* Icons */}
