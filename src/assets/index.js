@@ -25,8 +25,11 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import siib from "./company/siib.jpg";
+import charusat from "./company/charusat.jpg";
 import tanla_platforms_logo from "./company/tanla_platforms_logo.jpg";
-
+import arvind_brands_logo from "./company/arvind_brands_logo.jpg";
+import platformcommons_logo from "./company/platformcommons_logo.jpg";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -56,6 +59,10 @@ export {
   meta,
   shopify,
   tanla_platforms_logo,
+  arvind_brands_logo,
+  siib,
+  charusat,
+  platformcommons_logo,
   starbucks,
   tesla,
   carrent,

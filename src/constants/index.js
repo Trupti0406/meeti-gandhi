@@ -17,6 +17,10 @@ import {
   docker,
   meta,
   tanla_platforms_logo,
+  siib,
+  charusat,
+  arvind_brands_logo,
+  platformcommons_logo,
   tesla,
   shopify,
   carrent,
@@ -29,6 +33,10 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "work",
@@ -122,6 +130,23 @@ const technologies = [
   },
 ];
 
+const education = [
+  {
+    title: "Master of Business Administration - MBA",
+    company_name: "Symbiosis Institute of International Business",
+    icon: siib,
+    iconBg: "#FFFFFF",
+    date: "June 2022 - Mar 2024",
+  },
+  {
+    title: "Bachelor of Technology - BTech, Information Technology",
+    company_name: "CHARUSAT",
+    icon: charusat,
+    iconBg: "#FFFFFF",
+    date: "June 2018 - August 2022",
+  },
+];
+
 const experiences = [
   {
     title: "Enterprise Sales",
@@ -137,42 +162,29 @@ const experiences = [
     ],
   },
   {
-    title: "Enterprise Sales",
-    company_name: "Karix ( part of Tanla platforms)",
-    icon: tanla_platforms_logo,
+    title: "Summer Intern",
+    company_name: "Arvind Fashions Limited",
+    icon: arvind_brands_logo,
     iconBg: "#FFFFFF",
-    date: "March 2024 - Current",
+    date: "Apr 2023 - Jun 2023",
     points: [
-      "Managing Sales & Key accounts at Karix (part of Tanla Playforms)",
-      "I lead the enterprise account management for some of the largest and most prestigious companies across industries such as OTT, FMCG, Delivery Platform, F&B and PSU in India",
-      "Leading strategic sales initiatives, offering tailored CPaaS solutions to enterprise clients.",
-      "Strengthening relationships, ensuring customer satisfaction, and optimizing communication solutions.",
+      "As a Retail Intern, generated sales of Rs. 59 lakhs in a span of 2 months, surpassing the target by 48% by employing cross-selling and upselling strategies.",
+      "Supervised and coordinated day-to-day store operations for the U.S. Polo Assn. stores in Select City malls while catering to over 100 customers every day.",
+      "Enhanced customer experience at the USPA store by running a special campaign on the Premium collection launch days which increased the walk-in count by 35%.",
+      " Maintained merchandised and visual presentation standards on a daily basis.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Product Management Intern",
+    company_name: "Platform Commons",
+    icon: platformcommons_logo,
+    iconBg: "#FFFFFF",
+    date: "Jul 2023 - Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led transformative project at PlatformCommons, enhancing platform competitiveness & user experience.",
+      "Conducted comprehensive competitive research to identify market gaps & opportunities",
+      "uccessfully launched feature-rich platform meeting user needs & maintaining competitiveness.",
+      "PDeepened expertise in design leadership, emphasizing collaboration, innovation, & user-centricity.",
     ],
   },
 ];
@@ -270,4 +282,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  education,
+  testimonials,
+  projects,
+};

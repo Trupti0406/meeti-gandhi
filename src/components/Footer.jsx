@@ -60,13 +60,13 @@ const Footer = () => {
           className="text-white hover:text-[#915EFF] transition-colors duration-300">
           <FaTwitter size={20} />
         </a>
-        <a
+        {/* <a
           href="https://instagram.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-[#915EFF] transition-colors duration-300">
           <FaInstagram size={20} />
-        </a>
+        </a> */}
         <a
           href="https://linkedin.com"
           target="_blank"
@@ -84,13 +84,13 @@ const Footer = () => {
           className="text-white hover:text-[#915EFF] transition-colors duration-300">
           <FaPhone size={20} />
         </a>
-        <a
+        {/* <a
           href="https://your-portfolio-link.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-[#915EFF] transition-colors duration-300">
           <FaLink size={20} />
-        </a>
+        </a> */}
       </div>
     </footer>
   );
