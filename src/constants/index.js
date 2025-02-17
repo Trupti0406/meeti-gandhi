@@ -133,7 +133,7 @@ const technologies = [
 const education = [
   {
     title: "Master of Business Administration - MBA",
-    company_name: "Symbiosis Institute of International Business",
+    company_name: "Symbiosis international university",
     icon: siib,
     iconBg: "#FFFFFF",
     date: "June 2022 - Mar 2024",
