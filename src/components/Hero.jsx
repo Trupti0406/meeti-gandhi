@@ -1,5 +1,5 @@
 import { FaEnvelope } from "react-icons/fa";
-import TRUPTI from "../assets/meeti-heroo.png";
+import TRUPTI from "../assets/meetii.png";
 import { BsLinkedin } from "react-icons/bs";
 import { RiContactsFill } from "react-icons/ri";
 import { MdDownload, MdOpenInBrowser } from "react-icons/md";
