@@ -31,6 +31,10 @@ import {
 
 export const navLinks = [
   {
+    id: "home",
+    title: "Home",
+  },
+  {
     id: "about",
     title: "About",
   },
@@ -50,28 +54,28 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Karix CPaaS Expertise",
+    title: "CPaaS Expertise",
     description:
-      "Karix CPaaS delivers scalable communication solutions across industries, enhancing customer engagement through marketing automation, and future-ready innovations.",
-    icon: web, // Replace with an appropriate icon
+      "I specialize in delivering scalable communication solutions across industries, enhancing customer engagement through marketing automation and innovative, future-ready technologies.",
+    icon: web,
   },
   {
     title: "Strategic Partnerships",
     description:
-      "Builds long-term relationships with enterprise clients, focusing on customer-centric solutions. Through consultative engagement.",
-    icon: mobile, // Replace with an appropriate icon
+      "I focus on building long-term relationships with enterprise clients, offering customer-centric solutions through consultative engagement to drive business success.",
+    icon: mobile,
   },
   {
     title: "Data-Driven Sales",
     description:
-      "Leveraging market intelligence, Karix designs sales strategies, implements automation, and optimizes performance to enhance efficiency, revenue, and long-term business profitability.",
-    icon: backend, // Replace with an appropriate icon
+      "With a strong foundation in market intelligence, I design sales strategies, implement automation, and optimize performance to enhance efficiency, increase revenue, and drive long-term business profitability.",
+    icon: backend,
   },
   {
     title: "Collaborative Solutions",
     description:
-      "Karix ensures seamless integration of its CPaaS offerings, aligning with enterprise needs and leveraging technology to enhance customer communication and engagement.",
-    icon: creator, // Replace with an appropriate icon
+      "I ensure seamless integration of CPaaS offerings, aligning with enterprise needs and leveraging technology to enhance customer communication and engagement effectively.",
+    icon: creator,
   },
 ];
 

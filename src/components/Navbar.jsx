@@ -19,9 +19,37 @@ const Navbar = () => {
       } else {
         setScrolled(false);
       }
+
+      // Check which section is in view
+      const sections = navLinks.map((link) => {
+        const element = document.getElementById(link.id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // Calculate how much of the section is visible in the viewport
+          // We consider the section "in view" when it's taking at least 30% of the viewport height
+          // or when the top of the section is within the top half of the viewport
+          return {
+            id: link.id,
+            title: link.title,
+            visible:
+              rect.top <= window.innerHeight * 0.5 &&
+              rect.bottom >= window.innerHeight * 0.3,
+          };
+        }
+        return { id: link.id, title: link.title, visible: false };
+      });
+
+      // Find the first section that is currently visible
+      const currentSection = sections.find((section) => section.visible);
+      if (currentSection) {
+        setActive(currentSection.title);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // Run once on mount to set initial active section
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -43,8 +71,7 @@ const Navbar = () => {
           }}>
           <img src={logo1} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Meeti &nbsp;
-            <span className="sm:block hidden"> | Sales Manager</span>
+            Meeti Gandhi
           </p>
         </Link>
 
@@ -54,7 +81,7 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] font-medium cursor-pointer transition-colors duration-300`}
               onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -79,7 +106,7 @@ const Navbar = () => {
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                  } transition-colors duration-300`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
