@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { FaSquareXTwitter } from "react-icons/fa6";
 const Hero = () => {
   return (
-    <div className="z-50 overflow-hidden relative w-full h-full sm:h-screen flex items-start md:mt-16 justify-center max-w-7xl mx-auto">
+    <div className="z-50 overflow-hidden relative w-full h-full  flex items-start md:mt-16 justify-center max-w-7xl mx-auto">
       <div
         className="grid grid-cols-1 items-end lg:grid-cols-2 lg:gap-12 gap-y-8
   bg-gradient-to-r from-[#0d1224] to-[#0a0d37] 
