@@ -63,10 +63,9 @@ const Contact = () => {
         }
       );
   };
-//  console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
-//  console.log("Service ID:", import.meta.env.VITE_APP_EMAILJS_SERVICE_ID);
-//  console.log("Template ID:", import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID);
-
+  //  console.log("Public Key:", import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
+  //  console.log("Service ID:", import.meta.env.VITE_APP_EMAILJS_SERVICE_ID);
+  //  console.log("Template ID:", import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID);
 
   return (
     <div
@@ -118,7 +117,7 @@ const Contact = () => {
           <button
             type="submit"
             className="bg-tertiary py-4 px-6 rounded-lg outline-none w-full text-white font-bold shadow-md shadow-primary">
-            {loading ? "Sending..." : "Send"}
+            {loading ? "Sending message..." : "Let's Connect"}
           </button>
         </form>
       </motion.div>
